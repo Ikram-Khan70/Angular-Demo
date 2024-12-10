@@ -1,0 +1,83 @@
+/* Basic Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101111;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 2px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a i {
+    margin-right: 5px;
+  }
+  
+  /* Toggle Button for Mobile View */
+  .toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #34495e;
+      width: 200px;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .toggle-btn {
+      display: block;
+    }
+  }
+  

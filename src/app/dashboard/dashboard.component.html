@@ -1,0 +1,7 @@
+<div class="dashboard">
+    <div class="block" *ngFor="let query of queries; let i = index">
+      <h3>Query {{ i + 1 }}</h3>
+      <button (click)="executeQuery(i + 1)">Execute Query</button>
+    </div>
+  </div>
+  
