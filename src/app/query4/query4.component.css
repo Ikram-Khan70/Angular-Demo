@@ -1,0 +1,29 @@
+.query-container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .query-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .query-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .query-container button:hover {
+    background-color: #2980b9;
+  }
+  

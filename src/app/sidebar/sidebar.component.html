@@ -1,16 +1,24 @@
 <div class="sidebar" [class.collapsed]="isCollapsed">
   <button class="toggle-btn" (click)="toggleSidebar()">
-    {{ isCollapsed ? '☰' : '✖' }}
+    {{ isCollapsed ? '&rarr;' : '&larr;' }}
   </button>
-  <ul class="menu" *ngIf="!isCollapsed">
+  
+    <!-- <li><a href="#">Query1</a></li>
+    <li><a href="#">Query2</a></li>
+    <li><a href="#">Query3</a></li>
+    <li><a href="#">Query4 </a></li>
+    <li><a href="#">Query5</a></li>
+    <li><a href="#">Query6</a></li> -->
+   <ul class="menu" *ngIf="!isCollapsed">
    <b><li><a href="#">Dashboard</a></li></b> 
-    <li><a href="#">Central Data</a></li>
-    <li><a href="#">Workflows</a></li>
-    <li><a href="#">Accelerators</a></li>
-    <li><a href="#">Scenario Manager</a></li>
-    <li><a href="#">Reports</a></li>
-    <li><a href="#">Event Status</a></li>
-    <li><a href="#">Report Builder</a></li>
-    <li><a href="#">Supply Chain</a></li>
+  
+  <ul class="sidebar-links">
+    <li><a routerLink="/query1" routerLinkActive="active">Query 1</a></li>
+    <li><a routerLink="/query2" routerLinkActive="active">Query 2</a></li>
+    <li><a routerLink="/query3" routerLinkActive="active">Query 3</a></li>
+    <li><a routerLink="/query4" routerLinkActive="active">Query 4</a></li>
+    <li><a routerLink="/query5" routerLinkActive="active">Query 5</a></li>
+    <li><a routerLink="/query6" routerLinkActive="active">Query 6</a></li>
+  </ul>
   </ul>
 </div>

@@ -1,11 +1,11 @@
 /* Sidebar Container */
 .sidebar {
-    width: 170px;
+    width: 295px;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 4;
-    margin-top: 80px;
+    margin-top: 68px;
     background-color: #101111; /* Dark background */
     color: #fff; /* White text */
     overflow-y: auto;
